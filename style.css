@@ -1084,3 +1084,28 @@ section h2::after{
 .card h3 {
   display: none;
 }
+/* 📱 Ajuste do Painel do Atleta no celular */
+@media (max-width: 480px) {
+  #painelAtleta {
+    transform: scale(0.9);
+    transform-origin: top center;
+  }
+
+  #painelAtleta .painelGrid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  #painelAtleta h2 {
+    font-size: 1rem;
+  }
+
+  #painelAtleta .card {
+    padding: 12px;
+  }
+
+  #painelAtleta button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
